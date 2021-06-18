@@ -182,11 +182,6 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<body onload="go()" class="bg">
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Instalando Cache Offline... <font color=\"#ee596f\"> Aguarde!!!</font>";localStorage.isCached=false;};
-			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Cache <font color=\"#ee596f\">instalada</font> com sucesso!!!";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Agora saia usando o <font color=\"#ee596f\">CIRCULO, desabilite a rede</font> e retorne ao guia ou navegador."; }, 2600);};
-		</script>
-		<script>
 			var width = 0;
 			function frame1() {
 				var elem = document.getElementById("myBar");
